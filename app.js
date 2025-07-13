@@ -23,6 +23,8 @@ app.use('/api/v1/subscriptions', subRouter)
 //custom middleware : global error handling
 app.use(errorMiddleware)
 
+//auth : authentication
+
 app.get('/',(req,res)=>{
     res.send("Welcome to the subscription tracker API!")
 })

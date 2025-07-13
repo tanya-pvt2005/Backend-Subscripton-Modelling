@@ -16,4 +16,10 @@ config({path: `.env.${process.env.NODE_ENV || 'developement'}.local`})
 // console.log(process.env)
 
 //destructs PORT value from process.env
-export const {PORT, NODE_ENV, DB_URI} = process.env;
+export const {
+    PORT,
+    NODE_ENV,
+    DB_URI,
+    JWT_SECRET,
+    JWT_EXPIRES_IN
+} = process.env;
